@@ -9,11 +9,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmic.Playground.ConsoleApp", "Cosmic.Playground.ConsoleApp\Cosmic.Playground.ConsoleApp.csproj", "{DB9C3434-26D9-4DC1-B7A0-6D74E192CEE7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmic.Playground.ConsoleApp", "Cosmic.Playground.ConsoleApp\Cosmic.Playground.ConsoleApp.csproj", "{DB9C3434-26D9-4DC1-B7A0-6D74E192CEE7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmic.Playground.UnitTests", "Cosmic.Playground.UnitTests\Cosmic.Playground.UnitTests.csproj", "{61723B6E-5392-40E5-845A-CEF61A1FC363}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmic.Playground.UnitTests", "Cosmic.Playground.UnitTests\Cosmic.Playground.UnitTests.csproj", "{61723B6E-5392-40E5-845A-CEF61A1FC363}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmic.Playground.Core", "Cosmic.Playground.Core\Cosmic.Playground.Core.csproj", "{DB2132FB-2610-4CD2-A77E-4B8E0A4D3CD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmic.Playground.Core", "Cosmic.Playground.Core\Cosmic.Playground.Core.csproj", "{DB2132FB-2610-4CD2-A77E-4B8E0A4D3CD2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

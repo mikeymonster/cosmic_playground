@@ -3,4 +3,6 @@
 public interface ICallableThing
 {
     public Task DoStuff();
+
+    void DisplayMessage(string message);
 }

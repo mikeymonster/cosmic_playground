@@ -7,4 +7,9 @@ public class SomeClass2 : ICallableThing
     {
         Console.WriteLine("Hello World!");
     }
+
+    public void DisplayMessage(string message)
+    {
+        Console.WriteLine(message);
+    }
 }
