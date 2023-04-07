@@ -1,4 +1,5 @@
 using Cosmic.Playground.Core.Interfaces;
+using Humanizer;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
@@ -24,7 +25,7 @@ public class Worker : BackgroundService
         {
             _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
             await Task.Delay(1000, stoppingToken);
-           _thing.DisplayMessage($"This is the {++counter} time through the loop");
+           _thing.DisplayMessage($"This is the {(++counter).ToOrdinalWords()} time through the loop");
 
            
         }
