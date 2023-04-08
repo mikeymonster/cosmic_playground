@@ -1,11 +1,10 @@
 ﻿using Cosmic.Playground.Core.Models;
-using FluentAssertions;
 
 namespace Cosmic.Playground.UnitTests.Core.Models;
 public class TemperatureRecordTests
 {
     [Fact]
-    public void TemperatureRecord_Sets_Expected_Properties()
+    public void TemperatureRecord_Constructor_Sets_Expected_Properties()
     {
         var time = DateTime.UtcNow;
         const double temperature = 21.3;

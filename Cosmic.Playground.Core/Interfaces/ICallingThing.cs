@@ -2,5 +2,5 @@
 
 public interface ICallingThing
 {
-    public Task CallSomething();
+    Task CallSomething();
 }

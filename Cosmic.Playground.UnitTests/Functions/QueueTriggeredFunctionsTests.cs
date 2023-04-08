@@ -1,11 +1,4 @@
-﻿using Azure.Storage.Queues;
-using Cosmic.Playground.UnitTests.Core.Builders;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Cosmic.Playground.UnitTests.Functions.Builders;
+﻿using Cosmic.Playground.UnitTests.Functions.Builders;
 using Cosmic.Playground.Core.Models;
 
 namespace Cosmic.Playground.UnitTests.Functions;

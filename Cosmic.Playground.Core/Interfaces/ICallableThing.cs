@@ -2,7 +2,7 @@
 
 public interface ICallableThing
 {
-    public Task DoStuff();
+    Task DoStuff();
 
     void DisplayMessage(string message);
 }

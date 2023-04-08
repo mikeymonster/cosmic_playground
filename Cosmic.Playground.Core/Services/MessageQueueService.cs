@@ -10,7 +10,7 @@ public class MessageQueueService : IMessageQueueService
 
     public MessageQueueService(QueueServiceClient queueServiceClient)
     {
-        _queueServiceClient = queueServiceClient;
+        _queueServiceClient = queueServiceClient ?? throw new ArgumentNullException(nameof(queueServiceClient));
     }
 
     public async Task Push(string message)

@@ -1,5 +1,4 @@
 ﻿using Cosmic.Playground.Core.Providers;
-using FluentAssertions;
 
 namespace Cosmic.Playground.UnitTests.Providers;
 

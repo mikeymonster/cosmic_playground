@@ -2,6 +2,7 @@
 using Azure.Storage.Queues;
 using Cosmic.Playground.ConsoleApp;
 using Cosmic.Playground.Core.Constants;
+using Cosmic.Playground.Core.DataGenerators;
 using Cosmic.Playground.Core.Interfaces;
 using Cosmic.Playground.Core.Providers;
 using Cosmic.Playground.Core.Services;
@@ -25,15 +26,14 @@ using var host = Host.CreateDefaultBuilder(args)
             _configuration = config.Build();
         }
     )
-    .ConfigureServices((hostContext, services ) =>
+    .ConfigureServices((hostContext, services) =>
     {
         var appSettings = hostContext.Configuration.GetSection(Settings.AppSettingsSection);
 
         services
             .AddSingleton<IDateTimeProvider, DateTimeProvider>()
-            .AddSingleton<IGuidProvider, GuidProvider>();
-
-        services
+            .AddSingleton<IGuidProvider, GuidProvider>()
+            .AddSingleton<IDataGenerator, FakeDataGenerator>()
             .AddTransient<ICallingThing, SomeClass>()
             .AddTransient<ICallableThing, SomeClass2>();
 
@@ -46,7 +46,7 @@ using var host = Host.CreateDefaultBuilder(args)
             var storageQueueConnectionString = appSettings[Settings.StorageQueueConnectionString];
 
             builder.AddQueueServiceClient(storageQueueConnectionString)
-                .ConfigureOptions(c => 
+                .ConfigureOptions(c =>
                     c.MessageEncoding = QueueMessageEncoding.Base64);
         });
 
