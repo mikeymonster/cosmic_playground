@@ -10,7 +10,9 @@ public class FakeDataGenerator : IDataGenerator
     public const double MinimumTemperature = -10.0;
     public const double MaximumTemperature = 35.0;
 
-    public FakeDataGenerator(IDateTimeProvider dateTimeProvider)
+    public FakeDataGenerator(
+        IDateTimeProvider dateTimeProvider,
+        IGuidProvider guidProvider)
     {
         //_dateTimeProvider = dateTimeProvider ?? throw new ArgumentNullException(nameof(dateTimeProvider));
         var randomizer = new Randomizer();
@@ -20,6 +22,7 @@ public class FakeDataGenerator : IDataGenerator
                     new TemperatureRecord(
                         dateTimeProvider.UtcNow,
                         randomizer.Double(MinimumTemperature, MaximumTemperature)))
+            .RuleFor(t => t.Id, _ => guidProvider.NewGuid())
                 //.RuleFor(t => t.Temperature, _ =>
                 //    _random.NextDouble() * (MaximumTemperature - MinimumTemperature) + MinimumTemperature)
                 //.RuleFor(t => t.Time, f => _dateTimeProvider.UtcNow)

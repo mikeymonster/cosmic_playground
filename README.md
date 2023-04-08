@@ -8,6 +8,10 @@ https://pmichaels.net/di-console-app/
 https://debajmecrm.com/how-to-use-app-config-or-configuration-files-in-net-core-console-application/
 
 
+## Cosmos
+
+https://code-maze.com/azure-cosmos-db-with-asp-net-core-web-api/
+
 
 
 ## Things to try

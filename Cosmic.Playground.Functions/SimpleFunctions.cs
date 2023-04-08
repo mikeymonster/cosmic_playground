@@ -7,7 +7,7 @@ namespace Cosmic.Playground.Functions;
 
 public class SimpleFunctions
 {
-    private readonly ILogger _logger;
+    private readonly ILogger<SimpleFunctions> _logger;
 
     public SimpleFunctions(ILoggerFactory loggerFactory)
     {
