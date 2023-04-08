@@ -1,7 +1,7 @@
-using Cosmic.Playground.Core;
 using Cosmic.Playground.Core.Interfaces;
+using Cosmic.Playground.Core.Services;
 
-namespace Cosmic.Playground.UnitTests;
+namespace Cosmic.Playground.UnitTests.Core.Services;
 
 public class CallStuffTests
 {
@@ -16,6 +16,5 @@ public class CallStuffTests
         await callTarget
             .Received(1)
             .DoStuff();
-
     }
 }

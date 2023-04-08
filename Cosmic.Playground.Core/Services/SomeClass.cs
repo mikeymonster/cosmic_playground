@@ -1,6 +1,6 @@
 ﻿using Cosmic.Playground.Core.Interfaces;
 
-namespace Cosmic.Playground.Core;
+namespace Cosmic.Playground.Core.Services;
 public class SomeClass : ICallingThing
 {
     private readonly ICallableThing _thing2;

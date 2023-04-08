@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
@@ -30,6 +30,12 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Cosmic.Playground.Core\Cosmic.Playground.Core.csproj" />
+    <ProjectReference Include="..\Cosmic.Playground.Functions\Cosmic.Playground.Functions.csproj" />
+    <ProjectReference Include="..\Cosmic.Playground.Web\Cosmic.Playground.Web.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Web\" />
   </ItemGroup>
 
 </Project>

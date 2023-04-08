@@ -6,6 +6,7 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C03FE170-9890-43AC-9C53-5E14EC152539}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
+		.gitignore = .gitignore
 		README.md = README.md
 	EndProjectSection
 EndProject
@@ -14,6 +15,12 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmic.Playground.UnitTests", "Cosmic.Playground.UnitTests\Cosmic.Playground.UnitTests.csproj", "{61723B6E-5392-40E5-845A-CEF61A1FC363}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmic.Playground.Core", "Cosmic.Playground.Core\Cosmic.Playground.Core.csproj", "{DB2132FB-2610-4CD2-A77E-4B8E0A4D3CD2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmic.Playground.Functions", "Cosmic.Playground.Functions\Cosmic.Playground.Functions.csproj", "{F227D0DD-C92D-41F8-921A-D87E3E4BF92B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmic.Playground.Web", "Cosmic.Playground.Web\Cosmic.Playground.Web.csproj", "{37B5BB8D-3007-4072-98BA-CA72A642A315}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{B42BE16B-E867-417E-AC9D-590EFA3967C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +40,20 @@ Global
 		{DB2132FB-2610-4CD2-A77E-4B8E0A4D3CD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB2132FB-2610-4CD2-A77E-4B8E0A4D3CD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB2132FB-2610-4CD2-A77E-4B8E0A4D3CD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F227D0DD-C92D-41F8-921A-D87E3E4BF92B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F227D0DD-C92D-41F8-921A-D87E3E4BF92B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F227D0DD-C92D-41F8-921A-D87E3E4BF92B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F227D0DD-C92D-41F8-921A-D87E3E4BF92B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37B5BB8D-3007-4072-98BA-CA72A642A315}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37B5BB8D-3007-4072-98BA-CA72A642A315}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37B5BB8D-3007-4072-98BA-CA72A642A315}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37B5BB8D-3007-4072-98BA-CA72A642A315}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{61723B6E-5392-40E5-845A-CEF61A1FC363} = {B42BE16B-E867-417E-AC9D-590EFA3967C5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2AF9C57E-BA51-4552-B33A-2F9FAF069D0F}

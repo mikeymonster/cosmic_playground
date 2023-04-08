@@ -1,6 +1,6 @@
 ﻿using Cosmic.Playground.Core.Interfaces;
 
-namespace Cosmic.Playground.Core;
+namespace Cosmic.Playground.Core.Services;
 public class SomeClass2 : ICallableThing
 {
     public async Task DoStuff()
